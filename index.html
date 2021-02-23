@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <img src="./images/banner.png" alt="header banner" />
+  <div class="wrapper">
+    <section class="content">
+      <div class="columns">
+        <main class="main">
+          <div class="steps">
+            <div class="step1" id="step1">
+              <div class="stepTitle">Step 1 : Select your shape</div>
+              <div class="calcDetails">
+                <p>
+                  Please select the shape that you would like to calculate the
+                  area of and press the button "Go to step 2"
+                </p>
+                <div class="shapeOptions">
+                  <input type="radio" id="rectangles" name="shape" value="rectangle" />
+                  <label for="rectangle">Rectangle</label><br />
+                  <input type="radio" id="circles" name="shape" value="circle" />
+                  <label for="circle">Circle</label><br />
+                  <input type="radio" id="squares" name="shape" value="square" />
+                  <label for="square">Square</label><br />
+                  <input type="radio" id="ellipses" name="shape" value="ellipse" />
+                  <label for="ellipse">Ellipse</label><br /><br />
+                </div>
+              </div>
+              <div class="proceedBtn">
+                <button type="submit" onclick=gotoStep2()>Go to step 2</button> or <span onclick="startOver()">Cancel</span>
+                
+              </div>
+            </div>
+
+
+
+            <div class="step2" id="step2" style=display:none>
+              <div class="stepTitle">Step 2 : Insert your values</div>
+              <div class="calcDetails">
+
+                <p id="step2Description"></p>
+
+                <div id="circle" style="display: none;">
+                  <label for="diameter">Diameter</label>
+                  <input type="text" id="diameter" name="diameter">
+                </div>
+                <div id="square" style="display: none;">
+                  <label for="side">Side</label>
+                  <input type="text" id="side" name="side">
+                </div>
+                <div id="rectangle" style="display: none;">
+                  <label for="Length">Length</label>
+                  <input type="text" id="Length" name="Length">
+                  <label for="Width">Width</label>
+                  <input type="text" id="Width" name="Width">
+                </div>
+                <div id="ellipse" style="display: none;">
+                  <label for="axis-a">axis-a</label>
+                  <input type="text" id="axis-a" name="axis-a">
+                  <label for="axis-b">axis-b</label>
+                  <input type="text" id="axis-b" name="axis-b">
+                </div>
+              </div>
+              <div class="proceedBtn">
+                <button type="submit" onclick="gotoStep3()">Go to step 3</button> or <span onclick="startOver()">Cancel</span>
+              </div>
+            </div>
+
+
+
+            <div class="step3" id="step3" style=display:none>
+              <div class="stepTitle">Step 3 : Your results</div>
+              <div class="calcDetails">
+                <p id="step3Description">
+                 
+                </p>
+                <div id="result">
+                 
+                </div>
+              </div>
+              <div class="proceedBtn">
+                <button type="submit" onclick="startOver()">Start over</button>
+              </div>
+            </div>
+
+
+        </main>
+        <aside class="calcDetail">
+          <div class="title">Welcome to Shape Calculator</div>
+          <div class="intro">
+            Shape Calculator is an interactive web application. To the right
+            you will find the 3 step application. Follow the instructions in
+            each step. Clicking cancel will take you back to step 1. Enjoy!
+          </div>
+          <div class="description">
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </p>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic life One day however a
+              small line of blind text by the name of Lorem Ipsum decided to
+              leave for the far World of Grammar. The Big Oxmox advised her
+              not to do so, because there were thousands of bad Commas.
+            </p>
+          </div>
+        </aside>
+        <aside class="addBanner">
+          <img src="./images/vBanner.png" alt="addBanner" />
+        </aside>
+      </div>
+    </section>
+  </div>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+img {
+  max-width: 100%;
+}
+.intro {
+  font-weight: bold;
+}
+.title {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.content {
+  display: flex;
+  flex: 1;
+  color: #000;
+}
+.columns {
+  display: flex;
+  flex: 1;
+}
+.main {
+  flex: 1;
+  order: 2;
+}
+.steps {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  text-align: left;
+  padding: 20px;
+}
+.stepTitle {
+  font-size: 20px;
+  text-align: center;
+}
+.calcDetail {
+  width: 50%;
+  order: 1;
+  padding: 20px;
+}
+.addBanner {
+  margin-left: 50px;
+  width: 10%;
+  order: 3;
+}
+.proceedBtn {
+  padding-top: 20px;
+}
+span {
+  cursor: pointer;
+}
+.calcDetails {
+  min-height: 120px;
+}
+#result {
+  text-align: center;
+  font-size: 18px;
+}
